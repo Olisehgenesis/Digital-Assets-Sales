@@ -69,3 +69,5 @@ exclude:
 collections:
   meetings:
     output: true
+
+theme: jekyll-theme-slate
