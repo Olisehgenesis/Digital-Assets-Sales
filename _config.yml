@@ -1,0 +1,71 @@
+# This file contains configuration flags for the site
+
+# Name of your site
+title: Miniplistic
+
+# Site Tagline 
+tagline: A simple Jekyll Theme
+
+# Site Description 
+description: A simple Jekyll Theme
+
+# Your website URL 
+url: https://patrickmfsd.github.io
+
+# If you're hosting your site at a Project repository on GitHub pages
+# (http://yourusername.github.io/repository-name)
+# and NOT your User repository (http://yourusername.github.io)
+# then add in the baseurl here, like this: "/repository-name"
+baseurl: "/Miniplistic"
+ 
+# Banner Text
+bannertext: "This is a text banner, edit in _config.yml"
+
+# Favicon
+favicon: /images/favicon.png
+
+# Site Logo
+sitelogo: /images/site-logo.png
+
+# Footer Logo
+footerlogo: /images/footerlogo.png
+
+# Social Links
+github:  https://github.com/patrickmfsd/
+facebook: 
+twitter:
+email: 
+
+# Nav Bar Links (Add new or change pages if your site requires it)
+blog: "/" 
+projects: "/projects"
+Membership: "/404"
+contact: "/contact"
+about: "/about"
+
+# !! You don't need to change any of the configuration flags below !!
+
+# Pagenate support
+paginate: 5
+paginate_path: "/page:num/"
+
+permalink: /:title/
+
+# This will require each of these plugins automatically.
+plugins:
+  - jekyll-paginate 
+
+# Build settings
+markdown: kramdown
+
+# Exclude these files from your production _site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
+
+collections:
+  meetings:
+    output: true

@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<br>
+<h1>{{ page.title }}</h1>   
+<p><i class="fa fa-calendar post-meta"></i> &nbsp;{{ page.date | date: "%b %-d, %Y" }} &nbsp; Post By: {{page.author}}</p>
+<article class="blog-post-small blog-post-content">
+	{{ content }}
+</article>
+<div class="post-categories">
+	{% if post %}
+		{% assign categories = post.categories %}
+	{% else %}
+		{% assign categories = page.categories %}
+	{% endif %}
+	{% for category in categories %}
+	<p>Categories: <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a></p>
+	{% unless forloop.last %}&nbsp;{% endunless %}
+	{% endfor %}
+</div>
+<br>

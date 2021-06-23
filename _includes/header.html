@@ -1,0 +1,55 @@
+ <div class="site-header">
+ 
+	 <!-- Icon Bar (Github, Facbook, Dark Mode Togle -->
+	<div class="col-md-12 iconbar">
+		<a id="gh" title="GitHub" href="{{ site.github }}" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+		<a id="fb" title="Facebook" href="{{ site.facebook }}" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+		<a id="tw" title="Twitter" href="{{ site.twitter }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+		<a id="dm" title="Dark Mode"><i onclick="theme()" class="fa fa-adjust theme" aria-hidden="true"></i></a>
+	</div>
+	
+	<!-- Logo -->
+	<a href=" {{ site.baseurl }}{{ site.blog }} "><img class="logo animated fadeInDown" src="{{site.baseurl}}{{ site.sitelogo }}" alt="site logo"></a>
+	
+	<!-- Quick sign up for membership  -->
+	<div class="membersignup col-md-12 animated tada">
+		<a href="{{ site.baseurl }}{{ site.membership }}" target="_blank">Become a Member, Join Us</a> 
+	</div>   
+
+ </div>
+
+
+<!-- Navigation Bar -->
+<nav class="nav navbar justify-content-center navbar-expand-lg navbar-dark bg-dark sticky-top">
+	<nav class="navbar ">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sitenav" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="sitenav">
+			<ul class="nav navbar-nav mr-auto mt-2 mt-lg-0">
+				<li class="nav-item">
+					<a class="nav-link" href="{{ site.baseurl }}{{ site.blog }}">Blog</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="{{ site.baseurl }}{{ site.projects }}">Projects</a></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="{{ site.baseurl }}{{ site.membership }}" target="_blank">Membership</a></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="{{ site.baseurl }}{{ site.contact }}">Contact</a>
+				</li>    
+			</ul>
+		</div>
+	</nav>
+</nav>
+
+</nav>
+
+<!-- Alert/notify users of something, this is dismissible -->         
+<div class="alert alert-dismissible fade show alert-danger" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">×</span>
+  </button>
+  {{ site.bannertext }}
+</div>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>	
+    {% include header.html %}
+	<!-- Content -->
+    <div class="row animated fadeIn bodycontent">
+	    <div>
+			{{ content }}
+	    </div>
+    </div>
+    <div class="col-md-12">
+    	{% include footer.html %}
+    </div>
+    	{% include include_js.html %}   
+  </body>
+</html>
