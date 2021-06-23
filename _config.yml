@@ -70,4 +70,4 @@ collections:
   meetings:
     output: true
 
-theme: jekyll-theme-slate
+theme: jekyll-theme-cayman
